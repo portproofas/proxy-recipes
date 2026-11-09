@@ -1,0 +1,6 @@
+title: Proxy recipes
+description: Copy-paste snippets for using an authenticated HTTP or SOCKS5 proxy from common clients, with explicit timeouts and separate proxy and destination errors.
+theme: jekyll-theme-primer
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
