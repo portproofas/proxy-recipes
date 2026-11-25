@@ -1,7 +1,7 @@
 
 # Proxy recipes
 
-Short, tested snippets for sending requests through an authenticated HTTP or SOCKS5 proxy. Each one sets explicit timeouts, keeps credentials out of the command line where the client allows it, and tells a proxy failure apart from a destination failure.
+Short, tested snippets for sending requests through an authenticated HTTP proxy. Each one sets explicit timeouts, keeps credentials out of the command line where the client allows it, and tells a proxy failure apart from a destination failure.
 
 The examples use the [Portproof](https://portproof.org) gateway host and its echo endpoint, so you can run them as written with an account. To use another provider, replace the host, port and username. Nothing else in the snippets is provider-specific.
 
@@ -23,8 +23,8 @@ The examples use the [Portproof](https://portproof.org) gateway host and its ech
 
 ## Conventions
 
-- `USERNAME` stands for the proxy username. The password comes from an environment variable or a prompt, never from shell history.
-- `https://api.portproof.org/v1/echo-ip` returns the exit IP and country as JSON. Any echo service works the same way.
-- Port 7000 is HTTP CONNECT and port 7001 is SOCKS5.
+- `YOUR_FULL_PROXY_USERNAME` and the `PROXY_USER` variable stand for the full proxy username from your dashboard. The password comes from an environment variable or a prompt, never from shell history.
+- `https://api.portproof.org/v1/echo-ip` returns the IP address it sees (your exit IP) as JSON. Any echo service works the same way.
+- Port 7000 is HTTP CONNECT and port 7001 is SOCKS5. The snippets use port 7000.
 
 Corrections and new clients are welcome as [issues or pull requests](https://github.com/portproofas/proxy-recipes).
